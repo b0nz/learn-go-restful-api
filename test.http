@@ -1,0 +1,33 @@
+### Get all categories
+GET http://localhost:3001/api/categories
+X-API-Key: SECRET
+
+### Post a new category
+POST http://localhost:3001/api/categories
+Accept: application/json
+Content-Type: application/json
+X-API-Key: SECRET
+
+{
+  "name": "Test latest"
+}
+
+### Get a category by id
+GET http://localhost:3001/api/categories/5
+Accept: application/json
+X-API-Key: SECRET
+
+### Update a category
+PUT http://localhost:3001/api/categories/8
+Accept: application/json
+Content-Type: application/json
+X-API-Key: SECRET
+
+{
+  "name": "test 8"
+}
+
+### Delete a category
+DELETE http://localhost:3001/api/categories/2
+Accept: application/json
+X-API-Key: SECRET
